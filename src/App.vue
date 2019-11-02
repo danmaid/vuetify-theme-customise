@@ -1,6 +1,6 @@
 <template>
-  <v-app>
-    <Cyber>
+  <Cyber>
+    <v-app>
       <v-app-bar app>
         <v-toolbar-title class="headline text-uppercase">
           <span>Vuetify</span>
@@ -31,8 +31,8 @@
         <v-spacer></v-spacer>
         <div>&copy; {{ new Date().getFullYear() }} 男メイド</div>
       </v-footer>
-    </Cyber>
-  </v-app>
+    </v-app>
+  </Cyber>
 </template>
 
 <script>
