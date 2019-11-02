@@ -1,0 +1,31 @@
+$cyber-black: (
+  "base": rgb(30, 30, 30),
+  "lighten-5": rgb(55, 55, 55),
+  "lighten-4": rgb(50, 50, 50),
+  "lighten-3": rgb(45, 45, 45),
+  "lighten-2": rgb(40, 40, 40),
+  "lighten-1": rgb(35, 35, 35),
+  "darken-1": rgb(25, 25, 25),
+  "darken-2": rgb(20, 20, 20),
+  "darken-3": rgb(15, 15, 15),
+  "darken-4": rgb(10, 10, 10)
+);
+
+$colors: (
+  "cyber-black": $cyber-black
+);
+
+
+$cyber: (
+  "background": map-get($cyber-black, "base"),
+  "foreground": rgb(138, 196, 255)
+);
+
+$material-dark: (
+  "background": map-get($cyber, "background"),
+  "text": (
+    "primary": map-get($cyber, "foreground")
+  ),
+  "cards": map-get($cyber-black, "lighten-2"),
+  "app-bar": map-get($cyber-black, "lighten-1")
+);
